@@ -42,6 +42,38 @@
   border-left: none;
   min-height: unset;
 }
+/* next three: runestone hack fo rth ebust nemu */
+#masthead #primary-navbar-sticky-wrapper {
+  overflow: visible;
+}
+#masthead #primary-navbar-sticky-wrapper .dropdown-content {
+  left: 250px
+}
+#masthead hr {
+  margin-bottom: 4px;
+  margin-top: 4px;
+  border-width: 3px;
+  border-color: #600;
+}
+/* next for the Activecode popup */
+/*
+.modal-backdrop.fade.in {
+   display: none;
+}
+*/
+#masthead .activecode-toggle {
+  padding: 5px;
+  float: left;
+  border-right: 1px solid #bababa;
+  border-top: 1px solid #bababa;
+  background: #eee;
+}
+#masthead .activecode-toggle .icon {
+  display: inline-block;
+  font-size: larger;
+  transform: rotate(130deg);
+}
+
 #primary-navbar .container::before,
 #masthead .navbar::before,
 #masthead .container::before,
