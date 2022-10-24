@@ -1,4 +1,4 @@
-article {
+#searchresultsplaceholder article {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -85,8 +85,8 @@ ol#searchresults > li > text {
     color: #444;
 }
 #searchresultsplaceholder {
-    position: absolute;
-    top: 10em;
+    position: fixed;
+    top: 5em;
     left: 10em;
     padding: 0 1em;
     border: 0.2em solid #009;
@@ -115,4 +115,15 @@ ol#searchresults > li > text {
     background-color: #fee;
     border-color: #f00;
 }
-
+#secondsearch {
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: 150;
+/*
+    display: none;
+*/
+}
+@media screen and (max-width: 800px) {
+    #secondsearch { display: none; }
+}
