@@ -100,20 +100,25 @@ ol#searchresults > li > text {
     font-weight: normal;
     font-style: italic;
     font-size: 90%;
+    padding-right: 1.5em;
 }
 #closesearchresults {
     font-size: 150%;
     border: 2px solid grey;
     border-radius: 0.3em;
     padding: 0 0.3em 0.1em 0.3em;
-    position: absolute;
-    top: 0.1em;
-    right: 0.1em;
+    margin-right: 0.1em;
+    position: sticky;
+    top: 0.2em;
+    left: 96%;
 }
 #closesearchresults:hover {
     color: #c00;
     background-color: #fee;
     border-color: #f00;
+}
+#closesearchresults + h2 {
+    margin-top: -1em;
 }
 #secondsearch {
     bottom: 0;
@@ -123,6 +128,9 @@ ol#searchresults > li > text {
 /*
     display: none;
 */
+}
+#searchempty {
+    display: none;
 }
 @media screen and (max-width: 800px) {
     #secondsearch { display: none; }
