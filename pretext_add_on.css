@@ -203,6 +203,7 @@ xhttps://runestone.academy/ns/books/published/javajavajava/example-the-cipher-cl
 }
 .pretext-content section article + article,
 .pretext-content section p + article,
+.pretext-content section .introduction + article,
 .pretext-content section .posterior + article {
     margin-top: 1.75em;
 }
